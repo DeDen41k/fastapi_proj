@@ -3,7 +3,7 @@ from sqlalchemy import create_engine, Column, Integer, String, Boolean, ForeignK
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-POSTGRESQL_DATABASE_URL = os.environ.get('SECRET_KEY')
+POSTGRESQL_DATABASE_URL = os.environ.get('DB_URL')
 
 engine = create_engine(POSTGRESQL_DATABASE_URL)
 
